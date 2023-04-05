@@ -1,0 +1,22 @@
+<div>
+<button><a href="http://localhost:27017/addUser">Add user</a></button>
+<table class="table" border="">
+ <tr>
+  <th>name</th>
+  <th>email</th>
+  <th>avliable</th>
+  <th>phone</th>
+  <th><th>phone</th></th>
+ </tr>
+ <% for(let i = 0; i < user.length; i++) { %>
+ <tr>
+  <td><%= user[i].name %></td>
+  <td><%= user[i].email %></td></td>
+  <td><%= user[i].avliable %></td></td>
+  <td><%= user[i].phone %></td></td>
+  <td><a href="http://27017/appointment/<%= user[i]._id%>">appointments</a></td>
+ </tr>
+ <>about:<%= user[i].about %></p>
+ <% } %>
+</table>
+</div>
